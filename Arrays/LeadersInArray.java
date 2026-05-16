@@ -18,7 +18,7 @@ public class LeadersInArray {
         Collections.reverse(ans);
         return ans;
     }
-    public static void main(String[] args) {c
+    public static void main(String[] args) {
         int[] nums = {10,22,12,3,0,6};
 
         LeadersInArray ab = new LeadersInArray();
