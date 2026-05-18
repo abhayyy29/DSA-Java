@@ -2,6 +2,7 @@ public class RotateMatrixOptimalSol{
     public static void rotate(int[][]matrix){
         int n = matrix.length;
 
+        // for transpose
         for(int i =0;i <n;i++){
             for(int j=i+1; j<n;j++){
                 int temp = matrix[i][j];
@@ -9,7 +10,7 @@ public class RotateMatrixOptimalSol{
                 matrix[j][i] = temp;
             }
         }
-
+            // reverse row
         for(int i=0; i<n; i++){
             int left =0;
             int right = n-1;
