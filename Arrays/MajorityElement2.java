@@ -41,7 +41,7 @@ public class MajorityElement2{
 
         List<Integer> ans = new ArrayList<>();
 
-        int n = nums.length;
+        int n = nums.length; 
         if(count1 > n/3){
             ans.add(candidate1);
         }
