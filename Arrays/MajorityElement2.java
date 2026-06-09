@@ -6,7 +6,7 @@ public class MajorityElement2{
 
         int count1 =0; int count2 =0;
         int candidate1 = 0; int candidate2 = 0;
-
+        
         for(int num : nums){
             if(candidate1 == num){
                 count1++;
