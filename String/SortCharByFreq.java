@@ -22,7 +22,7 @@ class SortCharByFreq {
 
     }
     public static void main(String[] args) {
-        String s = "tree";
+        String s = "trrree";
         SortCharByFreq ab = new SortCharByFreq();
         System.out.println(ab.frequencySort(s));
     }
