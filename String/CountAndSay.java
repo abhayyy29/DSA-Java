@@ -22,7 +22,7 @@ public class CountAndSay {
             temp.append(result.charAt(result.length()-1));
 
             result = temp.toString();
-        }
+        } 
 
         return result;
     }
