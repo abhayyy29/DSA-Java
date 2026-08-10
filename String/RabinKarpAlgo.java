@@ -29,7 +29,7 @@ public class RabinKarpAlgo {
                     }
 
                     if(j == m)
-                        System.out.println("Patter found at index: " + i);
+                        System.out.println("Patter found at index:  " + i);
                     
                 }
                     if(i<n-m){
