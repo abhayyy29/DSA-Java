@@ -25,7 +25,7 @@ public class HighestFreqChar {
         }
         char mfc = str.charAt(0);
         for(Character key : hm.keySet()){
-            if(hm.get(key) > hm.get(mfc)){
+            if(hm.get(key) > hm.get(mfc)){ 
                 mfc = key;
             }
         }
