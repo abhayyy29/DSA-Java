@@ -37,6 +37,6 @@ public class LongestConsecutiveSeq {
     }
     for(int i = 0; i< ml; i++){
         System.out.println(msp + i);
-    }
+     }
     }
 }
