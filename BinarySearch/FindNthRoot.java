@@ -39,7 +39,7 @@ public class FindNthRoot {
     }
     public static void main(String[] args) {
         int n = 3;
-        int m = 8;
+        int m = 125;
 
         FindNthRoot a = new FindNthRoot();
         System.out.println(a.nthRoot(n,m));
