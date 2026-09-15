@@ -1,5 +1,5 @@
 package BinarySearch;
-
+ 
 public class KokoEatingBanana {
     public int minimumRateToEatBanana(int[] arr, int h){
         int low = 0;
