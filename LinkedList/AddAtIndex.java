@@ -1,17 +1,16 @@
 package LinkedList;
 
-public class GetValue {
+public class AddAtIndex {
     public static class Node{
         int data;
         Node next;
     }
+    public static class LinkedList{
+        Node head;
+        Node tail;
+        int size;
 
-    public  static class LinkedList{
-            Node head;
-            Node tail;
-            int size;
-
-            public void addlast(int val){
+         public void addlast(int val){
                 Node temp = new Node();
                 temp.data = val;
                 temp.next = null;
@@ -79,6 +78,34 @@ public class GetValue {
                     return temp.data;
                 }
             }
+
+            public void addFirst(int val){
+                Node temp = new Node();
+                temp.data = val;
+                temp.next = head;
+
+                head = temp;
+
+                if(size == 0){
+                    head = tail = temp;
+                }
+                size++;    
+            }
+
+            public void addAt(int idx, int val){
+
+                Node node = new Node();
+                node.data = val;
+            
+                Node temp = head;
+
+                for(int i=0; i< idx - 1; i++){
+                    temp = temp.next;
+                }
+
+                node.next = temp.next;
+                temp.next = node;
+            }
     }
     public static void main(String[] args) {
         GetValue obj = new GetValue();
@@ -89,8 +116,12 @@ public class GetValue {
         ab.addlast(50);
         ab.addlast(70);
 
-        System.out.println(ab.getFirst());
-        System.out.println(ab.getLast());
-        System.out.println(ab.getAt(2));
+        // System.out.println(ab.getFirst());
+        // System.out.println(ab.getLast());
+        // System.out.println(ab.getAt(2));
+         ab.addAt(2, 100);
+        ab.display();
+
     }
-}
+    }
+
