@@ -1,6 +1,6 @@
 package LinkedList;
 
-public class KthElementFromEndOfLL {
+public class KthElementFromEndOfLL  {
     static class Node{
         int data;
         Node next;
@@ -158,6 +158,24 @@ public class KthElementFromEndOfLL {
                 }
             }
 
+            public  int kthFromLast(int k){
+                Node s = head;
+                Node f = head;
+
+                for(int i=0; i<k; i++){
+                    f=f.next;
+                }
+
+                while(f != tail){
+                    s= s.next;
+                    f= f.next;
+                }
+                return s.data;
+            }
+
+        }
+            
+
              public static void main(String[] args) {
         GetValue obj = new GetValue();
 
@@ -171,9 +189,9 @@ public class KthElementFromEndOfLL {
         // System.out.println(ab.getLast());
         // System.out.println(ab.getAt(2));
         ab.display();
-        ab.reverseDi();
-        ab.display();
+        System.out.println(ab.kthFromLast(1));
     }
         }
+    
     
 
